@@ -513,10 +513,10 @@
 			<h1 class="center bordertop" data-i18n="combat">Combat</h1>
 			<div class="sheet-row">
 				<button type="roll"
-					value="/me rolls for Axes against Strength TN (@{strengthtn}) .\n/roll @{favorill} + (@{axes}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}]"
+					value="/me rolls for Axes against Strength TN (@{strengthtn}) .\n/roll @{favorill} + [[(@{axes}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}]"
 					name="roll_axescheck"></button>
 				<button type="roll"
-					value="/me rolls for Axes against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + (@{axes}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}] - @{target|totalparry}"
+					value="/me rolls for Axes against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + [[(@{axes}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}] - @{target|totalparry}"
 					name="roll_axescheck"></button>
 				<label data-i18n="axes">Axes</label>
 				<div class="sheet-hover-info" data-i18n="axes-description"></div>
@@ -533,10 +533,10 @@
 
 			<div class="sheet-row">
 				<button type="roll"
-					value="/me rolls for Bows against Strength TN (@{strengthtn}) .\n/roll @{favorill} + (@{bows}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}]"
+					value="/me rolls for Bows against Strength TN (@{strengthtn}) .\n/roll @{favorill} + [[(@{bows}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}]"
 					name="roll_bowscheck"></button>
 				<button type="roll"
-					value="/me rolls for Bows against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + (@{bows}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}] - @{target|totalparry}"
+					value="/me rolls for Bows against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + [[(@{bows}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}] - @{target|totalparry}"
 					name="roll_bowscheck"></button>
 				<label data-i18n="bows">Bows</label>
 				<div class="sheet-hover-info" data-i18n="bows-description"></div>
@@ -553,10 +553,10 @@
 
 			<div class="sheet-row">
 				<button type="roll"
-					value="/me rolls for Spears against Strength TN (@{strengthtn}) .\n/roll @{favorill} + (@{spears}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}]"
+					value="/me rolls for Spears against Strength TN (@{strengthtn}) .\n/roll @{favorill} + [[(@{spears}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}]"
 					name="roll_spearscheck"></button>
 				<button type="roll"
-					value="/me rolls for Spears against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + (@{spears}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}] - @{target|totalparry}"
+					value="/me rolls for Spears against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + [[(@{spears}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}] - @{target|totalparry}"
 					name="roll_spearscheck"></button>
 				<label data-i18n="spears">Spears</label>
 				<div class="sheet-hover-info" data-i18n="spears-description"></div>
@@ -573,10 +573,10 @@
 
 			<div class="sheet-row">
 				<button type="roll"
-					value="/me rolls for Swords against Strength TN (@{strengthtn}) .\n/roll @{favorill} + (@{swords}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}]"
+					value="/me rolls for Swords against Strength TN (@{strengthtn}) .\n/roll @{favorill} + [[(@{swords}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}]"
 					name="roll_swordscheck"></button>
 				<button type="roll"
-					value="/me rolls for Swords against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + (@{swords}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})t[@{wearytype}] - @{target|totalparry}"
+					value="/me rolls for Swords against Strength TN (@{strengthtn}) - Target's parry (@{target|totalparry}).\n/roll @{favorill} + [[(@{swords}+?{Bonus Dice|0} + @{stanceattack_active}*@{stanceattackbonus})]]t[@{wearytype}] - @{target|totalparry}"
 					name="roll_swordscheck"></button>
 				<label data-i18n="swords">Swords</label>
 				<div class="sheet-hover-info" data-i18n="swords-description"></div>
@@ -720,7 +720,7 @@
 		<label class="left" data-i18n-title="special-damage" title="special-damage">Special damage</label>
 		<span>
 			<button type="roll"
-				value="/me attacks target against parry @{target|totalparry}.\n/roll 1t[lm-feat] + @{weapon_rating_1}+?{Bonus Dice|0}t[normal]"
+				value="/me attacks target against parry @{target|totalparry}.\n/roll 1t[lm-feat] + [[(@{weapon_rating_1}+?{Bonus Dice|0})]]t[normal]"
 				name="roll_weapon1"></button>
 			<input name="attr_weapon_skill_name_1" type="text">
 		</span>
@@ -730,7 +730,7 @@
 		<input name="attr_weapon_special_damage_1" type="text">
 		<span>
 			<button type="roll"
-				value="/me attacks target against parry @{target|totalparry}.\n/roll 1t[lm-feat] + @{weapon_rating_2}+?{Bonus Dice|0}t[normal]"
+				value="/me attacks target against parry @{target|totalparry}.\n/roll 1t[lm-feat] + [[(@{weapon_rating_2}+?{Bonus Dice|0})]]t[normal]"
 				name="roll_weapon1"></button>
 			<input name="attr_weapon_skill_name_2" type="text">
 		</span>
