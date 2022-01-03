@@ -45,16 +45,12 @@
 				<span class="diamond-small-red"><input name="attr_wisdom" value="0" type="number" min=1 max=6></span>
 				<span class="diamond-small"><input name="attr_fellowship" value="0" type="number"></span>
 				<span>
-					<button type="roll"
-						value="/me rolls for Valour against Heart TN (@{hearttn}) .\n/roll  @{valour_fav}*{2t[feat]}kh1 + (1-@{valour_fav})*@{favorill} + (@{valour}+?{Bonus Dice|0})t[@{wearytype}]"
-						name="roll_valourcheck"></button>
+					<button type="roll" value="@{valour_roll}" name="roll_valourcheck"></button>
 					<input type="checkbox" name="attr_valour_favoured">
 					<label data-i18n="valour" data-i18n-title="valour-description">Valour</label>
 				</span>
 				<span>
-					<button type="roll"
-						value="/me rolls for Wisdom against Wits TN (@{witstn}) .\n/roll  @{wisdom_fav}*{2t[feat]}kh1 + (1-@{wisdom_fav})*@{favorill} + (@{wisdom}+?{Bonus Dice|0})t[@{wearytype}]"
-						name="roll_wisdomcheck"></button>
+					<button type="roll" value="@{wisdom_roll}" name="roll_wisdomcheck"></button>
 					<input type="checkbox" name="attr_wisdom_favoured">
 					<label data-i18n="wisdom" data-i18n-title="wisdom-description">Wisdom</label>
 				</span>
@@ -183,9 +179,7 @@
 		<div id="skill-strength">
 			<h1>&nbsp;</h1>
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Awe against Strength TN (@{strengthtn}) .\n/roll @{awe_fav}*{2t[feat]}kh1 + (1-@{awe_fav})*@{favorill} + (@{awe}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_awecheck"></button>
+				<button type="roll" value="@{awe_roll}" name="roll_awecheck"></button>
 				<input type="checkbox" name="attr_awe_favoured">
 				<label data-i18n="awe">Awe</label>
 				<div class="sheet-hover-info" data-i18n="awe-description"></div>
@@ -200,9 +194,7 @@
 				</div>
 			</div>
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Athletics against Strength TN (@{strengthtn}) .\n/roll @{athletics_fav}*{2t[feat]}kh1 + (1-@{athletics_fav})*@{favorill} + (@{athletics}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_athleticscheck"></button>
+				<button type="roll" value="@{athletics_roll}" name="roll_athleticscheck"></button>
 				<input type="checkbox" name="attr_athletics_favoured">
 				<label data-i18n="athletics">Athletics</label>
 				<div class="sheet-hover-info" data-i18n="athletics-description"></div>
@@ -216,11 +208,8 @@
 					<input type="radio" name="attr_athletics" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Awareness against Strength TN (@{strengthtn}) .\n/roll @{awareness_fav}*{2t[feat]}kh1 + (1-@{awareness_fav})*@{favorill} + (@{awareness}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_awarenesscheck"></button>
+				<button type="roll" value="@{awareness_roll}" name="roll_awarenesscheck"></button>
 				<input type="checkbox" name="attr_awareness_favoured">
 				<label data-i18n="awareness">Awareness</label>
 				<div class="sheet-hover-info" data-i18n="awareness-description"></div>
@@ -234,11 +223,8 @@
 					<input type="radio" name="attr_awareness" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Hunting against Strength TN (@{strengthtn}) .\n/roll @{hunting_fav}*{2t[feat]}kh1 + (1-@{hunting_fav})*@{favorill} + (@{hunting}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_huntingcheck"></button>
+				<button type="roll" value="@{hunting_roll}" name="roll_huntingcheck"></button>
 				<input type="checkbox" name="attr_hunting_favoured">
 				<label data-i18n="hunting">Hunting</label>
 				<div class="sheet-hover-info" data-i18n="hunting-description"></div>
@@ -252,11 +238,8 @@
 					<input type="radio" name="attr_hunting" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Song against Strength TN (@{strengthtn}) .\n/roll @{song_fav}*{2t[feat]}kh1 + (1-@{song_fav})*@{favorill} + (@{song}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_songcheck"></button>
+				<button type="roll" value="@{song_roll}" name="roll_songcheck"></button>
 				<input type="checkbox" name="attr_song_favoured">
 				<label data-i18n="song">Song</label>
 				<div class="sheet-hover-info" data-i18n="song-description"></div>
@@ -270,11 +253,8 @@
 					<input type="radio" name="attr_song" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Craft against Strength TN (@{strengthtn}) .\n/roll @{craft_fav}*{2t[feat]}kh1 + (1-@{craft_fav})*@{favorill} + (@{craft}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_craftcheck"></button>
+				<button type="roll" value="@{craft_roll}" name="roll_craftcheck"></button>
 				<input type="checkbox" name="attr_craft_favoured">
 				<label data-i18n="craft">Craft</label>
 				<div class="sheet-hover-info" data-i18n="craft-description"></div>
@@ -292,9 +272,7 @@
 		<div id="skill-heart">
 			<h1 class="center">Skills</h1>
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Enhearten against Heart TN (@{hearttn}) .\n/roll @{enhearten_fav}*{2t[feat]}kh1 + (1-@{enhearten_fav})*@{favorill} + (@{enhearten}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_enheartencheck"></button>
+				<button type="roll" value="@{enhearten_roll}" name="roll_enheartencheck"></button>
 				<input type="checkbox" name="attr_enhearten_favoured">
 				<label data-i18n="enhearten">Enhearten</label>
 				<div class="sheet-hover-info" data-i18n="enhearten-description"></div>
@@ -308,11 +286,8 @@
 					<input type="radio" name="attr_enhearten" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Travel against Heart TN (@{hearttn}) .\n/roll @{travel_fav}*{2t[feat]}kh1 + (1-@{travel_fav})@{favorill} + (@{travel}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_travelcheck"></button>
+				<button type="roll" value="@{travel_roll}" name="roll_travelcheck"></button>
 				<input type="checkbox" name="attr_travel_favoured">
 				<label data-i18n="travel">Travel</label>
 				<div class="sheet-hover-info" data-i18n="travel-description"></div>
@@ -326,11 +301,8 @@
 					<input type="radio" name="attr_travel" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Insight against Heart TN (@{hearttn}) .\n/roll @{insight_fav}*{2t[feat]}kh1 + (1-@{insight_fav})@{favorill} + (@{insight}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_insightcheck"></button>
+				<button type="roll" value="@{insight_roll}" name="roll_insightcheck"></button>
 				<input type="checkbox" name="attr_insight_favoured">
 				<label data-i18n="insight">Insight</label>
 				<div class="sheet-hover-info" data-i18n="insight-description"></div>
@@ -344,11 +316,8 @@
 					<input type="radio" name="attr_insight" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Healing against Heart TN (@{hearttn}) .\n/roll @{healing_fav}*{2t[feat]}kh1 + (1-@{healing_fav})@{favorill} + (@{healing}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_healingcheck"></button>
+				<button type="roll" value="@{healing_roll}" name="roll_healingcheck"></button>
 				<input type="checkbox" name="attr_healing_favoured">
 				<label data-i18n="healing">Healing</label>
 				<div class="sheet-hover-info" data-i18n="healing-description"></div>
@@ -362,11 +331,8 @@
 					<input type="radio" name="attr_healing" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Courtesy against Heart TN (@{hearttn}) .\n/roll @{courtesy_fav}*{2t[feat]}kh1 + (1-@{courtesy_fav})@{favorill} + (@{courtesy}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_courtesycheck"></button>
+				<button type="roll" value="@{courtesy_roll}" name="roll_courtesycheck"></button>
 				<input type="checkbox" name="attr_courtesy_favoured">
 				<label data-i18n="courtesy">Courtesy</label>
 				<div class="sheet-hover-info" data-i18n="courtesy-description"></div>
@@ -380,11 +346,8 @@
 					<input type="radio" name="attr_courtesy" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Battle against Heart TN (@{hearttn}) .\n/roll @{battle_fav}*{2t[feat]}kh1 + (1-@{battle_fav})@{favorill} + (@{battle}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_battlecheck"></button>
+				<button type="roll" value="@{battle_roll}" name="roll_battlecheck"></button>
 				<input type="checkbox" name="attr_battle_favoured">
 				<label data-i18n="battle">Battle</label>
 				<div class="sheet-hover-info" data-i18n="battle-description"></div>
@@ -402,9 +365,7 @@
 		<div id="skill-wits">
 			<h1>&nbsp;</h1>
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Persuade against Wits TN (@{witstn}) .\n/roll @{persuade_fav}*{2t[feat]}kh1 + (1-@{persuade_fav})@{favorill} + (@{persuade}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_persuadecheck"></button>
+				<button type="roll" value="@{persuade_roll}" name="roll_persuadecheck"></button>
 				<input type="checkbox" name="attr_persuade_favoured">
 				<label data-i18n="persuade">Persuade</label>
 				<div class="sheet-hover-info" data-i18n="persuade-description"></div>
@@ -418,11 +379,8 @@
 					<input type="radio" name="attr_persuade" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Stealth against Wits TN (@{witstn}) .\n/roll @{stealth_fav}*{2t[feat]}kh1 + (1-@{stealth_fav})@{favorill} + (@{stealth}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_stealthcheck"></button>
+				<button type="roll" value="@{stealth_roll}" name="roll_stealthcheck"></button>
 				<input type="checkbox" name="attr_stealth_favoured">
 				<label data-i18n="stealth">Stealth</label>
 				<div class="sheet-hover-info" data-i18n="stealth-description"></div>
@@ -436,11 +394,8 @@
 					<input type="radio" name="attr_stealth" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Scan against Wits TN (@{witstn}) .\n/roll @{scan_fav}*{2t[feat]}kh1 + (1-@{scan_fav})@{favorill} + (@{scan}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_scancheck"></button>
+				<button type="roll" value="@{scan_roll}" name="roll_scancheck"></button>
 				<input type="checkbox" name="attr_scan_favoured">
 				<label data-i18n="scan">Scan</label>
 				<div class="sheet-hover-info" data-i18n="scan-description"></div>
@@ -454,11 +409,8 @@
 					<input type="radio" name="attr_scan" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Explore against Wits TN (@{witstn}) .\n/roll @{explore_fav}*{2t[feat]}kh1 + (1-@{explore_fav})@{favorill} + (@{explore}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_explorecheck"></button>
+				<button type="roll" value="@{explore_roll}" name="roll_explorecheck"></button>
 				<input type="checkbox" name="attr_explore_favoured">
 				<label data-i18n="explore">Explore</label>
 				<div class="sheet-hover-info" data-i18n="explore-description"></div>
@@ -472,11 +424,8 @@
 					<input type="radio" name="attr_explore" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Riddle against Wits TN (@{witstn}) .\n/roll @{riddle_fav}*{2t[feat]}kh1 + (1-@{riddle_fav})@{favorill} + (@{riddle}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_riddlecheck"></button>
+				<button type="roll" value="@{riddle_roll}" name="roll_riddlecheck"></button>
 				<input type="checkbox" name="attr_riddle_favoured">
 				<label data-i18n="riddle">Riddle</label>
 				<div class="sheet-hover-info" data-i18n="riddle-description"></div>
@@ -490,11 +439,8 @@
 					<input type="radio" name="attr_riddle" value="6" /><span></span>
 				</div>
 			</div>
-
 			<div class=sheet-row>
-				<button type="roll"
-					value="/me rolls for Lore against Wits TN (@{witstn}) .\n/roll @{lore_fav}*{2t[feat]}kh1 + (1-@{lore_fav})@{favorill} + (@{lore}+?{Bonus Dice|0})t[@{wearytype}]"
-					name="roll_lorecheck"></button>
+				<button type="roll" value="@{lore_roll}" name="roll_lorecheck"></button>
 				<input type="checkbox" name="attr_lore_favoured">
 				<label data-i18n="lore">Lore</label>
 				<div class="sheet-hover-info" data-i18n="lore-description"></div>
@@ -935,21 +881,48 @@
 		});
 	});
 
-	// based on universal sheet workers (see https://wiki.roll20.net/UniversalSheetWorkers)
-	// convert checkbox state to 0/1
-	const attrlist = [
-		"awe", "athletics", "awareness", "hunting", "song", "craft", 
-		"enhearten", "travel", "insight", "healing", "courtesy", "battle", 
-		"persuade", "stealth", "scan", "explore", "riddle", "lore",
-		"valour", "wisdom"];
-	attrlist.forEach(attr => {
-		attrfav = `${attr}_favoured`;
-		on(`change:${attrfav} sheet:opened`, function() {
-			getAttrs([`${attrfav}`], function(values) {
-				let faved = values[`${attrfav}`]||0;
-				let favtype = (faved == 0) ? 0 : 1;
-				setAttrs({
-					[`${attr}_fav`]: favtype,
+	// This sheet worker will derive the correct normal / favoured / illfavoured rolls based on the 
+	// global favoured status and the attribute specific favoured status	
+	let attrmap = new Map([
+		["strength", ["awe","athletics", "awareness", "hunting", "song", "craft"]],
+		["heart", ["enhearten", "travel", "insight", "healing", "courtesy", "battle","valour"]],
+		["wits", ["persuade", "stealth", "scan", "explore", "riddle", "lore","wisdom"]]
+	]);
+	attrmap.forEach((skillList, attr, attrmap) => {
+		let attrcapitalized = attr.replace(/^\w/, (c) => c.toUpperCase()); // first letter
+		skillList.forEach(skill => {
+			let skillfav = `${skill}_favoured`;
+			let skillcapitalized = skill.replace(/^\w/, (c) => c.toUpperCase()); // first letter
+			on(`change:${skillfav} change:favorill sheet:opened`, function() {
+				getAttrs([`${skillfav}`,"favorill"], function(values) {
+					// get attribute favoured state, 0 if unset
+					let faved = values[`${skillfav}`]||0;
+					// convert checked state to 1
+					let favattr = (faved == 0) ? 0 : 1;
+					// get global favoured/illfavoured state, "normal" if unset
+					let favorill = values.favorill ||"{1t[feat]}";
+					// favoured / illfavoured states can negate each other
+					// 2*favoured stays a simple favoured roll
+					let favorill_result = favattr;
+					if (favorill === "{2t[feat]}kh1"){
+						favorill_result = favorill_result + 1;
+					} else if (favorill === "{2t[feat]}kl1"){
+						favorill_result = favorill_result - 1;
+					}
+					// derive resulting roll expression. we calculate the complete expression at this central location
+					// to make easy maintenance later when this needs to be changed
+					let favorill_roll = "{1t[feat]}";
+					if (favorill_result >= 1){
+						favorill_roll = "{2t[feat]}kh1";
+					} else if (favorill_result <= -1) {
+						favorill_roll = "{2t[feat]}kl1";
+					}
+					let roll = 
+						`/me rolls for ${skillcapitalized} against ${attrcapitalized} TN (@{${attr}tn}).\n`
+						+ `/roll ${favorill_roll} + (@{${skill}}+?{Bonus Dice|0})t[@{wearytype}] `; 
+					setAttrs({
+						[`${skill}_roll`]: roll,
+					});
 				});
 			});
 		});
