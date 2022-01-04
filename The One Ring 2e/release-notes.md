@@ -3,6 +3,9 @@ This is a rewrite based on the early 2e (basic) and 1e edition that also include
 
 # Release History
 
+## 01.01.00 (Build 2)
+- adder sheet worker for all skill rolls to completely update the roll on changing favoured skills or the global favoured/illfavoured state. Thus rolls show directly what is rolled without using binary switches for parts of the roll.
+
 ## 01.00.00 (Build 1)
 
 - Technical rewrite (based on a css grid)

@@ -1,3 +1,4 @@
+<input type="hidden" name="attr_version" value ="01.01.00">
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" />
 <div class="sheet-pc">
 	<div id="content">
@@ -706,7 +707,7 @@
 	<button type="action" name="act_isPC" data-i18n="sheet-type-Player-Character">Player Character</button>
 	<button type="action" name="act_isAdversary" data-i18n="sheet-type-Adversary">Adversary</button>
 	<br />
-	<h6>Version 01.00.00</h6>
+	<h6>Version <span name="attr_version"></span></h6>
 </div>
 <div style="display: none;">
 	<input name="attr_wearytype">
@@ -930,7 +931,7 @@
 
 	// Migration scripts. 
 	on("sheet:opened", function() {
-		getAttrs(["build", "sheettab"], function(v) {
+		getAttrs(["build", "version", "sheettab"], function(v) {
 			const build = parseInt(v.build) || 0;
 			var attrs = {};
 
@@ -938,7 +939,7 @@
 			// NOTE: to maintain backwards compatibility with sheets predating the version attribute, all steps will be performed for new sheets
 			// Version 01.00.00
 			if (build < 1) {
-				console.log("Migration 01.00.00")
+				console.log("Migration 01.00.00");
 				attrs["build"] = 1;
 				if (v.sheettab === "isPC"){
 					getAttrs(["treaure"], function(values){
